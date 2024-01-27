@@ -1,8 +1,38 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Weather.io - Realtime Weather Information App
 
-Currently, two official plugins are available:
+Weather.io is a simple React application designed to provide users with real-time weather information for a specified location. Utilizing Material UI components for an intuitive and responsive user interface, the app seamlessly integrates with the Tomorrow.io real-time weather API to deliver accurate and up-to-date weather data.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## SnapShot
+
+To be added!
+
+
+## Features
+
+1. Realtime Weather Data
+2. User-Friendly Interface
+3. Tomorrow.io Integration
+
+
+## Technologies Used
+
+* React
+* Material UI
+* Tomorrow.io Realtime Weather API
+
+
+## Installation
+
+1. Clone this repository on your local machine.
+2. Install dependencies: `npm install`
+3. Set up Tomorrow.io API key: Obtain an API key from Tomorrow.io and update it in the app.
+4. Start the development server: `npm run dev`
+5. Open your web browser and visit `http://localhost:3000` to access the application.
+
+## License
+This project is licensed under the GPL-3.0 License.
+
+
+## Contributions
+Contributions are welcome! If you'd like to enhance Weather.io or fix issues, please follow the standard GitHub fork and pull request workflow.
