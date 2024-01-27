@@ -1,10 +1,21 @@
-import React from "react"
+import React from 'react';
+
+import CssBaseline from "@mui/material/CssBaseline";
+import { Container } from "@mui/material";
+
+import WeatherCard from "./components/WeatherCard";
+import { containerStyles } from './styles/customStyles';
+
 function App() {
 
-  return (
-    <>
-    </>
-  )
+    return (
+        <React.Fragment>
+            <CssBaseline />
+            <Container sx={containerStyles}>
+                <WeatherCard />
+            </Container>
+        </React.Fragment>
+    );
 }
 
-export default App
+export default App;
