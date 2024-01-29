@@ -3,8 +3,12 @@ import { createTheme } from "@mui/material/styles";
 const theme = createTheme({
     palette: {
         primary: {
-            main: "#38419D",
-            dark: "#0F2167", 
+            main: "#3B3486",
+            dark: "#0F2167",
+        },
+        secondary: {
+            main: "#191919",
+            light: "#45474B",
         },
     },
     components: {
@@ -12,14 +16,15 @@ const theme = createTheme({
             styleOverrides: {
                 html: {
                     fontSize: "16px",
-                    '@media (max-width: 480px)': {
-                        fontSize: "12px"
-                    }
+                    "@media (max-width: 480px)": {
+                        fontSize: "12px",
+                    },
                 },
                 body: {
-                    backgroundImage: "linear-gradient(to top, #F3F8FF 0%, #DEECFF 100%)",
+                    backgroundImage:
+                        "linear-gradient(to top, #F3F8FF 0%, #DEECFF 100%)",
                 },
-            }
+            },
         },
         MuiIconButton: {
             defaultProps: {
@@ -27,13 +32,13 @@ const theme = createTheme({
                     bgcolor: "primary.main",
                     color: "#fff",
 
-                    '&:hover': {
+                    "&:hover": {
                         bgcolor: "primary.dark",
-                    }
-                }
-            }
+                    },
+                },
+            },
         },
-    }
+    },
 });
 
 export default theme;

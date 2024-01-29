@@ -1,12 +1,18 @@
-import { Typography } from "@mui/material";
+import Typography from "@mui/material/Typography";
 
 const Header = () => {
-
     return (
-        <Typography variant="h3" fontWeight={900} color="primary.main" textTransform={"uppercase"} align="center" mb={5}>
+        <Typography
+            variant="h2"
+            fontWeight={900}
+            color="primary.main"
+            textTransform={"uppercase"}
+            align="center"
+            mb={3}
+        >
             Weather.io
         </Typography>
     );
-}
+};
 
 export default Header;

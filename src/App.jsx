@@ -1,13 +1,13 @@
-import React from 'react';
+import React from "react";
 
 import CssBaseline from "@mui/material/CssBaseline";
-import { Container } from "@mui/material";
+import Container from "@mui/material/Container";
 
 import WeatherCard from "./components/WeatherCard";
-import { containerStyles } from './styles/customStyles';
+
+import { containerStyles } from "./styles/customStyles";
 
 function App() {
-
     return (
         <React.Fragment>
             <CssBaseline />

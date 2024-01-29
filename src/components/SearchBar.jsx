@@ -1,12 +1,17 @@
-
 import Box from "@mui/material/Box";
-import TextField from "@mui/material/TextField";
+import IconButton from "@mui/material/IconButton";
+import InputAdornment from "@mui/material/InputAdornment";
 import SearchIcon from "@mui/icons-material/Search";
-import { IconButton, InputAdornment } from "@mui/material";
+import TextField from "@mui/material/TextField";
 
-const SearchBar = () => {
+const SearchBar = ({ location, setLocation, fetchData }) => {
+    const getWeatherHandler = (e) => {
+        e.preventDefault();
+        fetchData();
+        setLocation("");
+    };
     return (
-        <Box>
+        <Box component="form" onSubmit={getWeatherHandler}>
             <TextField
                 type="text"
                 id="outlined-basic"
@@ -15,10 +20,13 @@ const SearchBar = () => {
                 helperText="Please enter a city name"
                 fullWidth
                 required
+                value={location}
+                onChange={(e) => setLocation(e.target.value)}
+                autoComplete="off"
                 InputProps={{
                     endAdornment: (
                         <InputAdornment position="end">
-                            <IconButton aria-label="delete">
+                            <IconButton type="submit" aria-label="search">
                                 <SearchIcon />
                             </IconButton>
                         </InputAdornment>
